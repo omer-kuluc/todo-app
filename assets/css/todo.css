@@ -1,0 +1,164 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Josefin Sans";
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.container-inner {
+  max-width: 327px;
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-inline: 25px;
+  margin-bottom: 40px;
+  background: url("../img/todo-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  align-items: flex-start;
+}
+
+.input-area input{
+  box-shadow: 0px 35px 50px -15px #C2C3D680;
+  border-style: none;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.input-area .input-checkbox {
+  margin-right: 12px;
+}
+
+.input-text::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  color: #9495A5;
+}
+
+.todoList {
+  list-style: none;
+}
+
+.todo {
+  background-color: #FFFFFF;
+  box-shadow: 0px 35px 50px -15px #C2C3D680;
+  border-radius: 5px;
+}
+
+.todo li {
+  display: flex;
+  padding: 16px 20px;
+  border-bottom: 1px solid #E3E4F1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  color: #494C6B;
+}
+
+.todo-complete {
+  color: #D1D2DA;
+  text-decoration: line-through;
+}
+
+.todo-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-inline: 20px;
+}
+
+.todo-bottom p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  color: #9495A5;
+}
+
+.todoList li span {
+  margin-inline: 12px auto;
+}
+
+.clear-complete {
+  cursor: pointer;
+}
